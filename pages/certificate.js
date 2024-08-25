@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+import logo from '../public/logo.png';
 
 const Certificate = () => {
   // Define the styles in a React-compatible way
@@ -29,6 +31,11 @@ const Certificate = () => {
   return (
     <div style={styles.container}>
       <div style={styles.content}>
+      <Image className=" object-cover rounded-lg"
+              fill
+              priority
+              src={logo}
+              alt="form-learn"/>
         <h1>Hello, A4 World!</h1>
         <p>This is an exam.</p>
       </div>
