@@ -97,6 +97,9 @@ export default function Home() {
       formik.setFieldValue('co2e_p_r_percent', '');
     }
   }, [formik.values.co2e_p_r, formik.values.co2e_p_r_value]);
+  const handleViewInventory = () => {
+    router.push("/success");
+  };
 
 
   return (
@@ -530,10 +533,17 @@ export default function Home() {
             >
               Save
             </button>
+            {/* View Inventory button */}
+          <button
+            type="button" // This is important so that it doesn't trigger form submission
+            onClick={handleViewInventory}
+            className="bg-gray-500 font-latoBold text-sm text-white py-3 mt-3 rounded-lg w-full"
+          >
+            View Inventory
+          </button>
           </div>
         </form>
       </main>
     </m.div>
   );
 }
-
