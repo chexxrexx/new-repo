@@ -116,7 +116,7 @@ export default function Success() {
                     <td className="border border-gray-400 px-4 py-2"><input name="batchNumber" value={editedData.batchNumber} onChange={handleChange} /></td>
                     <td className="border border-gray-400 px-4 py-2"><input name="purchasetype" value={editedData.purchase_type} onChange={handleChange} /></td>
                     <td className="border border-gray-400 px-4 py-2"><input name="network_exclusivity" value={editedData.network_exclusivity} onChange={handleChange} /></td>
-                    <td className="border border-gray-400 px-4 py-2"><input name="purchaseVolume" value={editedData.purchaseVolume} onChange={handleChange} /></td>
+                    <td className="border border-gray-400 px-4 py-2"><input name="purchaseVolumeFuel" value={editedData.purchaseVolumeFuel} onChange={handleChange} /></td>
                     <td className="border border-gray-400 px-4 py-2"><input name="purchase_volume" value={editedData.purchase_volume} onChange={handleChange} /></td>
                     <td className="border border-gray-400 px-4 py-2"><input name="purchase_cost" value={editedData.purchase_cost} onChange={handleChange} /></td>
                     <td className="border border-gray-400 px-4 py-2"><input name="currency" value={editedData.currency} onChange={handleChange} /></td>
@@ -143,7 +143,7 @@ export default function Success() {
                     <td className="border border-gray-400 px-4 py-2">{data[key].batchNumber}</td>
                     <td className="border border-gray-400 px-4 py-2">{data[key].purchase_type}</td>
                     <td className="border border-gray-400 px-4 py-2">{data[key].network_exclusivity}</td>
-                    <td className="border border-gray-400 px-4 py-2">{data[key].purchaseVolume}</td>
+                    <td className="border border-gray-400 px-4 py-2">{data[key].purchaseVolumeFuel}</td>
                     <td className="border border-gray-400 px-4 py-2">{data[key].purchase_volume}</td>
                     <td className="border border-gray-400 px-4 py-2">{data[key].purchase_cost}</td>
                     <td className="border border-gray-400 px-4 py-2">{data[key].currency}</td>

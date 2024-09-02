@@ -160,7 +160,7 @@ function PODraftPage() {
             {/* Purchase Volume metric tons */}
             <label className="block font-latoBold text-sm w-1/3">Purchase Volume</label>
             <input
-              className="border-2 border-gray-500 p-2 rounded-md w-full focus:border-teal-500 focus:ring-teal-500"
+              className="border-2 border-gray-500 p-2 rounded-md w-1/3 focus:border-teal-500 focus:ring-teal-500"
               type="text"
               name="purchaseVolume"
               placeholder="metric tons"
@@ -170,7 +170,7 @@ function PODraftPage() {
             {/* Purchase volume liters */}
             <input
               type="text"
-              className="border-2 border-gray-500 p-2 rounded-md w-full focus:border-teal-500 focus:ring-teal-500"
+              className="border-2 border-gray-500 p-2 rounded-md w-1/3 focus:border-teal-500 focus:ring-teal-500"
               name="purchase_volume"
               placeholder="liters"
               value={formik.values.purchase_volume}
@@ -276,15 +276,9 @@ function PODraftPage() {
                   console.error("Error saving data:", error);
                 });
             }}
-            className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700"
+            className="bg-teal-500 text-white font-bold py-3 px-4 rounded-lg w-full hover:bg-teal-700 mt-6"
           >
             Generate PO Draft
-          </button>
-          <button 
-           onClick={ async () => {
-          router.push('/certificate')}}
-          className = "bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700" >
-            Generate Certificate
           </button>
         </form>
       </main>

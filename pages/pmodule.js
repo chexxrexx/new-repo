@@ -41,7 +41,7 @@ export default function Home() {
     initialValues: {
       purchase_type: "Direct fuel purchase",
       network_exclusivity: "", // checkbox
-      purchaseVolume: "",
+      purchaseVolumeFuel: "",
       purchase_volume: "metric tons",
       purchase_cost: "",
       currency: "USD",
@@ -57,7 +57,7 @@ export default function Home() {
       co2e_p_r_percent: "",
       ISCC_RSB_Certificate_Number: "",
       feedstock: "",
-      country_restricted: "", // checkbox
+      country_restricted: "", // checkbox || check this
       country: "Finland",
       customer_restricted: "", // checkbox
     },
@@ -197,7 +197,7 @@ export default function Home() {
               <input
                 className="border-2 border-gray-500 p-2 rounded-md w-7/12 focus:border-teal-500 focus:ring-teal-500"
                 type="text"
-                name="purchaseVolume"
+                name="purchaseVolumeFuel"
                 onChange={formik.handleChange}
                 value={formik.values.name}
                 onBlur={formik.handleBlur}

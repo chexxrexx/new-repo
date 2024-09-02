@@ -22,6 +22,12 @@ export default function TwoButtons() {
         >
           OPS Module
         </button>
+        <button
+          onClick={() => handleButtonClick('/success')}
+          className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700"
+        >
+          View Inventory
+        </button>
       </div>
     </div>
   );
